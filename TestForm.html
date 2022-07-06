@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body >
+
+        <div class="mt-20 sm:mt-0">
+            <div class="md:grid md:grid-cols-4 md:gap-8 grid-cols-3 sm:grid-cols-4">
+                <div class="md:col-span-1"></div>
+                <div class="mt-2 md:mt-0 md:col-span-2">
+                    <h3 class="text-center font-medium  text-voilet-600 mt-4">Personal Information</h3>
+                    <form action="#" method="POST">
+                       
+                        <div class="shadow overflow-hidden sm:rounded-md mt-4">
+                            
+                            <div class="px-4 py-5 bg-gray-600 sm:p-6">
+                                
+                                <div class="flex justify-center">
+                                    <img src="./assest/profile.jpg" class="rounded-full w-20 ">
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input  rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 mt-1 align-top mr-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label  text-gray-800" for="flexRadioDefault1">
+                                                Mr
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input  rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600  mt-1 align-top  bg-center   mr-1 " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label  text-gray-800" for="flexRadioDefault2">
+                                                Mr
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input class="form-check-input   rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600   mt-1 align-top  mr-1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label   text-gray-800" for="flexRadioDefault2">
+                                                Mrs
+                                            </label>
+                                        </div>
+                                    </div>
+                                
+                                <div class="grid grid-cols-4 gap-6">
+
+                                    <div class="col-span-6 sm:col-span-3">
+                                        <label for="first_name" class="block text-sm font-medium text-white ">First name</label>
+                                        <input type="text" name="first_name" id="first_name" placeholder="first Name" class="mt-1 sm:text-sm border-black rounded-md">
+                                    </div>
+
+                                    <div class="col-span-6 sm:col-span-3">
+                                        <label for="last_name" class="block text-sm font-medium text-white">Last name</label>
+                                        <input type="text" name="last_name" id="last_name" placeholder="last name" class="mt-1 sm:text-sm border-black rounded-md">
+                                    </div>
+
+                                    <div class="col-span-6 sm:col-span-4">
+                                        <label for="email_address" class="block text-sm font-medium text-white">
+                                            mail address1</label>
+                                        <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 border-2 block border-black sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-4">
+                                        <label for="email_address" class="block text-sm font-medium text-white">mail address 2</label>
+                                        <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 border-2 block border-black sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                        <label for="city" class="block text-sm font-medium text-white">City</label>
+                                        <input type="text" name="city" id="city" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-3">
+                                        <label for="country" class="block text-sm font-medium text-white">State</label>
+                                        <select id="country" name="country" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-black bg-white rounded-md  sm:text-sm">
+                                            <option>Maharastra</option>
+                                            <option>up</option>
+                                            <option>mp</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                        <label for="postal_code" class="block text-sm font-medium text-white">ZIP</label>
+                                        <input type="text" name="postal_code" id="postal_code" autocomplete="postal-code" class="mt-1  sm:text-sm border-black rounded-md">
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-4">
+                                        <label for="email_address" class="block text-sm font-medium text-white">E-mail</label>
+                                        <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 border-2 block border-black sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-4">
+                                        <label for="email_address" class="block text-sm font-medium text-white">Mobile Number</label>
+                                        <input type="text" name="email_address" id="email_address" autocomplete="email" class="mt-1 border-2 block border-black sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-4">
+                                    <label class="block mb-2 text-sm font-medium text-white dark:text-gray-300" for="multiple_files">Upload Photo</label>
+                                    <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border" id="multiple_files" type="file" multiple>
+                                   </div>
+                                    <div class="mb-3 xl:w-96">
+                                        <label for="FormControl" class="form-label inline-block mb-2 text-white"
+                                          >Language know</label>
+                                    <div class="flex items-center">
+                                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded  dark:bg-gray-700 ">
+                                        <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">English</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded ">
+                                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hindi</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded ">
+                                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Marathi</label>
+                                    </div>
+                                    <div class="flex justify-center">
+                                        <div class="mb-3 xl:w-96">
+                                          <label for="FormControl" class="form-label inline-block mb-2 text-white"
+                                            >Additional Information</label>
+                                          <textarea class=" form-control block w-full px-3 py-2 text-base font-normal text-gray-700  bg-white bg-clip-padding
+                                              border border-solid border-gray-300 rounded"
+                                            id="FormControl" rows="3" placeholder="Your message"
+                                          ></textarea>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                            <button type="reset" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
